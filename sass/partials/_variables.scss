@@ -1,14 +1,37 @@
+$bg__about-img: 
+    "../img/about/about-s1.jpg",
+    "../img/about/about-s2.jpg",
+    "../img/about/about-s3.jpg";
 $bg__coming-img: "../img/coming.jpg";
+$bg__contact-img: 
+    "../img/contact/contact-s1.jpg",
+    "../img/contact/contact-s2.jpg",
+    "../img/contact/contact-s3.jpg";
 $bg__error-img: "../img/error.jpg";
+$bg__index-img: "../img/index/index-s1.jpg";
+$bg__offer-img: 
+    "../img/offer/offer-s1.jpg",
+    "../img/offer/offer-s2.jpg";
 $bg__privacy-img: "../img/privacy.jpg";
+$bg__user-img: "../img/user/user-s1.jpg";
 $bg__classes:
+    "about",
     "coming",
+    "contact",
     "error",
-    "privacy";
+    "index",
+    "offer",
+    "privacy",
+    "user";
 $bg__img-arr: 
+    $bg__about-img,
     $bg__coming-img,
+    $bg__contact-img,
     $bg__error-img,
-    $bg__privacy-img;
+    $bg__index-img,
+    $bg__offer-img,
+    $bg__privacy-img,
+    $bg__user-img;
 $color__shadow: #333;
 $footer__height: 41px;
-$text-shadow: 1px 1px 3px $color__shadow; 
+$text__shadow: 1px 1px 3px $color__shadow; 

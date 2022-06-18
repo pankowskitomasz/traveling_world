@@ -1,0 +1,73 @@
+.contact{
+    &-s3{
+        background-blend-mode: multiply !important;
+        background-color: #999 !important;
+    }
+}
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+textarea{
+    resize: none;
+}
+nav{
+    z-index: 10;
+}
+
+@media all and (max-width: 767px){
+    .about{
+        &-s1,&-s2,&-s3{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+    .contact{
+        &-s1,&-s2{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+    .index{
+        &-s1{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+            background-position: left!important;
+        }
+    }
+    .navbar{
+        &-toggler{
+            background-color: #666;
+            border-color: #333;
+        }
+        &-nav{
+            background-color: #666;
+            border: 1px solid #333;
+            opacity: 0.9;
+            padding: 10px
+        }
+    }
+    .offer{
+        &-s1{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+}

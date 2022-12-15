@@ -4,9 +4,17 @@
     }
 }
 .contact{
+    &-s2{
+        background-position-x: right!important;
+    }
     &-s3{
         background-blend-mode: multiply !important;
         background-color: #999 !important;
+    }
+}
+.img{
+    &-fit{
+        object-fit: cover;
     }
 }
 .text{

@@ -2,20 +2,16 @@
     <div class="row mx-0 w-100 mt-5">
         <div class="col-12 col-md-7 minh-25vh order-1 order-md-2"></div>
         <div class="col-12 col-md-5 minh-50vh order-2 order-md-1 d-flex align-items-center">
-            <div class="w-100 text-center text-md-start text-shadow">
-                <h5 class="text-white">
-                    Sed ut perspiciatis
-                </h5>
+            <div class="w-100 text-center text-md-start text-shadow px-3">
                 <h2 class="dispaly-6 fw-bold text-white">
-                    Unde omnis iste
+                    Our offer
                 </h2>
                 <p class="text-white">
-                    Natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
-                    et quasi architecto beatae vitae dicta sunt explicabo. Nemo 
-                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut 
-                    fugit, sed quia consequuntur magni dolores eos qui ratione 
-                    voluptatem sequi nesciunt. Neque porro quisquam est
+                    Traveling around the world gives you the opportunity to explore 
+                    new places and meet new people. It can also be a great way to 
+                    learn about different cultures and histories. It's important 
+                    to keep an open mind when traveling, and to be willing to try 
+                    new things.
                 </p>
             </div>
         </div>
@@ -24,9 +20,9 @@
 <section class="offer-s2 container-fluid d-flex minh-100vh align-items-start py-5 border-top border-dark">
     <div class="row mx-0 w-100">
         <aside class="col-12 col-sm-5 col-md-4 col-lg-3 pt-5">
-            <div class="card opacity-8">
+            <div class="card opacity-9">
                 <div class="card-header bg-light">
-                    <h5 class="card-title text-secondary float-start">Filter</h5>   
+                    <h5 class="card-title text-secondary float-start">Search</h5>   
                     <button class="btn btn-outline-secondary btn-sm float-end rounded" 
                         data-bs-toggle="collapse" 
                         data-bs-target="#filters">
@@ -37,61 +33,37 @@
                     <form class="small">
                         <fieldset class="mb-3">
                             <legend>
-                                <h6 class="card-subtitle">Categories</h6>
+                                <h6 class="card-subtitle">Type</h6>
                             </legend>                                    
                             <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Men</label>
+                                <input class="form-check-input" type="checkbox" data-ng-model="filters.families"/>
+                                <label class="form-check-label">Families</label>
                             </div>                                    
                             <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Women</label>
+                                <input class="form-check-input" type="checkbox" data-ng-model="filters.group"/>
+                                <label class="form-check-label">Group</label>
                             </div>                                    
                             <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Kids</label>
+                                <input class="form-check-input" type="checkbox" data-ng-model="filters.individual"/>
+                                <label class="form-check-label">Individual</label>
                             </div>
                         </fieldset>
                         <fieldset class="mb-5 w-100">
                             <legend>
-                                <h6 class="card-subtitle">Clothing</h6>
+                                <h6 class="card-subtitle">Details</h6>
                             </legend>                                    
                             <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Activewear</label>
+                                <input class="form-check-input" type="checkbox" data-ng-model="filters.all_inclusive"/>
+                                <label class="form-check-label">All inclusive</label>
                             </div>                                    
                             <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Blazers</label>
+                                <input class="form-check-input" type="checkbox" data-ng-model="filters.private_guide"/>
+                                <label class="form-check-label">Private guide</label>
                             </div>                                    
                             <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Causal shirts</label>
-                            </div>                                  
-                            <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Coats</label>
+                                <input class="form-check-input" type="checkbox"  data-ng-model="filters.premium_package"/>
+                                <label class="form-check-label">Premium package</label>
                             </div>                       
-                            <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Denim</label>
-                            </div>                
-                            <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Jackets</label>
-                            </div>           
-                            <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Shorts</label>
-                            </div>        
-                            <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">Sweats</label>
-                            </div>     
-                            <div class="form-check ms-2">
-                                <input class="form-check-input" type="checkbox" />
-                                <label class="form-check-label">T-Shirts</label>
-                            </div>
                         </fieldset>
                         <div class="w-100 text-end border-top pt-2">
                             <input type="reset" value="Clear" class="btn btn-sm btn-secondary rounded-pill"/>
@@ -101,8 +73,29 @@
                 </div>
             </div>
         </aside>
-        <div class="col-12 col-sm-7 col-md-8 col-lg-9">
-
+        <div class="col-12 col-sm-7 col-md-8 col-lg-9 pt-5">
+            <div class="card mb-3" data-ng-repeat="trip in testdata | listfilter: filters">
+                <div class="row w-100 m-0">
+                    <div class="col-12 col-md-4 col-lg-3 p-0">
+                        <img class="card-img h-100 img-fit" src={{trip.image}} alt="">
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="card-body">
+                            <h5 class="card-title">{{trip.title}}</h5>
+                            <p>
+                                {{trip.description}}
+                            </p>
+                            <p>
+                                <em>Offer code: </em>
+                                <span class="badge rounded-pill bg-info text-shadow">{{trip.code}}</span>
+                            </p>
+                            <div class="w-100 text-end">
+                                <a href="#!/contact" class="btn btn-info rounded-pill">Ask now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

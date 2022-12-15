@@ -572,73 +572,82 @@ body, html {
 }
 
 /* line 7, ../sass/partials/_modules.scss */
+.contact-s2 {
+  background-position-x: right !important;
+}
+/* line 10, ../sass/partials/_modules.scss */
 .contact-s3 {
   background-blend-mode: multiply !important;
   background-color: #999 !important;
 }
 
-/* line 13, ../sass/partials/_modules.scss */
+/* line 16, ../sass/partials/_modules.scss */
+.img-fit {
+  object-fit: cover;
+}
+
+/* line 21, ../sass/partials/_modules.scss */
 .text-shadow {
   text-shadow: 1px 1px 3px #333;
 }
 
-/* line 17, ../sass/partials/_modules.scss */
+/* line 25, ../sass/partials/_modules.scss */
 h1, h2, h3, h4, h5, h6, .nav-link {
   font-family: "KaushanScript";
   letter-spacing: 2px;
 }
 
-/* line 21, ../sass/partials/_modules.scss */
+/* line 29, ../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
-/* line 24, ../sass/partials/_modules.scss */
+/* line 32, ../sass/partials/_modules.scss */
 nav {
   z-index: 10;
 }
 
 @media all and (max-width: 767px) {
-  /* line 30, ../sass/partials/_modules.scss */
+  /* line 38, ../sass/partials/_modules.scss */
   .about-s1, .about-s2, .about-s3 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 31, ../sass/partials/_modules.scss */
+  /* line 39, ../sass/partials/_modules.scss */
   .about-s1 *, .about-s2 *, .about-s3 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
 
-  /* line 40, ../sass/partials/_modules.scss */
+  /* line 48, ../sass/partials/_modules.scss */
   .contact-s1, .contact-s2 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 41, ../sass/partials/_modules.scss */
+  /* line 49, ../sass/partials/_modules.scss */
   .contact-s1 *, .contact-s2 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
 
-  /* line 50, ../sass/partials/_modules.scss */
+  /* line 58, ../sass/partials/_modules.scss */
   .index-s1 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
     background-position: left !important;
   }
-  /* line 51, ../sass/partials/_modules.scss */
+  /* line 59, ../sass/partials/_modules.scss */
   .index-s1 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
 
-  /* line 61, ../sass/partials/_modules.scss */
+  /* line 69, ../sass/partials/_modules.scss */
   .navbar-toggler {
     background-color: #666;
     border-color: #333;
   }
-  /* line 65, ../sass/partials/_modules.scss */
+  /* line 73, ../sass/partials/_modules.scss */
   .navbar-nav {
     background-color: #666;
     border: 1px solid #333;
@@ -646,12 +655,12 @@ nav {
     padding: 10px;
   }
 
-  /* line 73, ../sass/partials/_modules.scss */
+  /* line 81, ../sass/partials/_modules.scss */
   .offer-s1 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 74, ../sass/partials/_modules.scss */
+  /* line 82, ../sass/partials/_modules.scss */
   .offer-s1 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
